@@ -1,0 +1,17 @@
+.nav{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 35px;
+    margin: 3px;
+    justify-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 5px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav:hover{
+    box-shadow: rgba(190, 14, 14, 0.35) 0px 5px 15px;
+}

@@ -1,0 +1,18 @@
+.search{
+    /* background-color: brown; */
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.input{
+    width: 50%;
+    padding: 8px;
+    border: 2px solid black;
+    font-weight: 400;
+
+  
+    
+}
+.input:hover{
+    box-shadow: rgba(190, 14, 14, 0.35) 0px 5px 15px;
+}
