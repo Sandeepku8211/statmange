@@ -37,7 +37,7 @@ useEffect(()=>{
 },[])
   return (
     <div>
-   <div>
+   <div className='wrap'>
    {
         (isloading)?"loadin ..":pokedex.map((p)=><Pokemon name={p.name} image={p.image}key={p.id} type={p.type} id={p.id}/>)
     }

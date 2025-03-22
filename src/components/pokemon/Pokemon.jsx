@@ -1,11 +1,20 @@
 import React from 'react'
+import './Pokemon.css'
+import { Link, useParams } from 'react-router-dom'
 
-const Pokemon = ({name,image, id,}) => {
+const Pokemon = ({name,image, id})=>{
+  
+
   return (
-    <div>
-        <div>{name}</div>
-        <div> <img src={image} alt='image is loaded' /> </div>
+    <div className='wrap'>
+      <Link to={`/${name}/${id}`}>
+      <div className='pk'>
+        
+        <div> <img className='img' src={image} alt='image is loaded' /> </div>
+        <div className='heading'>{name}</div>
        
+    </div>
+      </Link>
     </div>
   )
 }
