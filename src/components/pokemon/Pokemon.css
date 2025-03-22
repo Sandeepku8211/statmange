@@ -1,23 +1,22 @@
 .pk{
-    display: flex;
-    
-    height: 300px;
-    width: 300px;
+    justify-items: center;
+    justify-content: center;
+
+    height: 280px;
+    width: 270px;
     border: 2px solid green;
     
 }
 
 .img{
-    height: 255px;
-    width: 240px;
+    height: 200px;
+    width: 195px;
 }
 
 .heading{
     font-size: 25px;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+
 
     letter-spacing: 2px;
     
@@ -25,14 +24,16 @@
 }
 
 .wrap{
-    padding: 5px;
     display: flex;
+    padding: 10px;
+    margin: 5px;
+    
     flex-basis: 20%;
     width: 100%;
-    flex-direction:column-reverse;
+ overflow: hidden;
     height: 50%;
  
    
-    flex-direction: column;
+    
     
 }
