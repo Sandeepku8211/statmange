@@ -1,4 +1,5 @@
 import axios from 'axios';
+import './PokemonDetails.css'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -8,7 +9,7 @@ const PokemonDetails = () => {
 
   async function dowloadPokemonDe() {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    console.log(response)
+ 
 
     setPokemonde({
       name:response.data.name,
@@ -26,12 +27,14 @@ const PokemonDetails = () => {
   })
   
   return (
-    <div>
-      <div> <img src={pokemonde.image} alt='data is dow' /></div>
-      <div>{pokemonde.name}</div>
-      <div>{pokemonde.height}</div>
-      <div>{pokemonde.weight}</div>
-      <div>{pokemonde.types}</div>
+    <div className='con'>
+      <div className='bg-black-500'> <img className='w-[400px]' src={pokemonde.image} alt='data is dow' /></div>
+      <div className='font'>{pokemonde.name}</div>
+     <div className='dis'>
+     <div className='p-4 m-4 bg-blue-500 text-white'>Height : {pokemonde.height}</div>
+     <div className='p-4 m-4 bg-blue-500 text-white'>Weight : {pokemonde.weight}</div>
+     </div>
+      <div className='p-4 m-4 bg-blue-500 text-white' >Types : {pokemonde.types}</div>
     </div>
   )
 }

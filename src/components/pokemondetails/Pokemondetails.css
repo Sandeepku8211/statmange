@@ -1,0 +1,22 @@
+.font{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.con{
+
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.dis{
+    display: inline-block;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+   
+}
