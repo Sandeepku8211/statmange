@@ -10,6 +10,8 @@ const Pokedex = () => {
     const [nexturl,setNexturl]=useState('');
     const [preurl,setPreurl]=useState('')
 
+ 
+
 async function downLoadPokeapi(){
     const response = await axios.get(pokedexurl);
     setNexturl(response.data.next);
